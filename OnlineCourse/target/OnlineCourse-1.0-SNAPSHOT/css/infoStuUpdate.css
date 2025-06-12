@@ -1,0 +1,87 @@
+.page {
+    /* background-color: rgb(80, 180, 180); */
+    width: 500px;
+    height: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page h1 {
+    font-size: 45px;
+    font-style: italic;
+    text-shadow: 1.1px 2.4px white;
+    margin-bottom: 22px;
+    margin-top: 10px;
+}
+
+.page div {
+    margin: 15px;
+}
+
+.page div input {
+    width: 200px;
+    height: 28px;
+    margin: 0 12px;
+    border: 0;
+    border-radius: 11px;
+}
+
+/* .page div:first-child input {
+  margin-left: 56px;
+} */
+
+.page div span {
+    font-style: italic;
+}
+
+/* .page div:first-child span {
+  position: relative;
+  left: 25px;
+} */
+#updateInfo {
+    width: 150px;
+    height: 28px;
+    background-color: #fefefeb3;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1.5px solid rgba(96, 83, 83);
+}
+
+#updateInfo :active {
+    transform: scale(0.90);
+}
+
+
+#term1,
+#term2 {
+    width: 15px;
+    position: relative;
+    top: 8px;
+}
+
+#addScore,
+#updateScore {
+    width: 150px;
+    height: 50px;
+    background-color: #fefefeb3;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1.5px solid rgba(96, 83, 83);
+}
+
+#addScore:active,
+#updateScore:active {
+    transform: scale(0.90);
+}
+
+#exit {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12px;
+    left: 13px;
+}
+

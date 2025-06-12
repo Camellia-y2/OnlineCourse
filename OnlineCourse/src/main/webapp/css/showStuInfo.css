@@ -1,0 +1,60 @@
+#exit {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12px;
+    left: 13px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 45px;
+    text-shadow: 1.3px 2.7px white;
+}
+
+.page {
+    margin: 0 auto;
+    width: 700px;
+    height: 370px;
+    border-radius: 20px;
+    margin-top:10px;
+}
+
+.specificMessage {
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    padding-top: 30px;
+}
+
+.specificMessage .rightpage img {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 2.1px 1px white;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+.leftpage p {
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#changeMessage {
+    width: 120px;
+    height: 30px;
+    background-color: #fefefeb3;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1.5px solid rgba(96, 83, 83);
+    position: relative;
+    top: -45px;
+    left: 290px;
+}
+
+#changeMessage:active {
+    transform: scale(0.90);
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    外部属性配置文件中的配置信息-->
+    <properties resource="config/db.properties"/>
+<!--    配置mybatis基本配置参数-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+<!--        配置日志-->
+        <setting name="logImpl" value="log4j"/>
+    </settings>
+<!--    取别名-->
+    <typeAliases>
+<!--        <typeAlias alias="course" type=""></typeAlias> 所有类都取了一个小名,最好配-->
+        <package name="org.example"/>
+    </typeAliases>
+<!--    配置事务管理方式，及数据源-->
+    <environments default="mysql_teaching">
+        <environment id="mysql_teaching">
+            <transactionManager type="jdbc" />
+            <dataSource type="POOLED">
+                <property name="driver" value="${mysql.driver}" />
+                <property name="url" value="${mysql.url}" />
+                <property name="username" value="${mysql.username}" />
+                <property name="password" value="${mysql.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+<!--    加载映射文件mapper-->
+    <mappers>
+        <package name="org.example.mapper"/>
+        <package name="org.example.service"/>
+        <package name="org.example.pojo"/>
+    </mappers>
+</configuration>

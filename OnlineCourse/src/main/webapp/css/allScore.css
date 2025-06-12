@@ -1,0 +1,62 @@
+#exit {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 12px;
+  left: 13px;
+}
+body {
+  background-color: rgba(93,118,152,0.35); /* 设置背景颜色为浅灰色 */
+}
+.container {
+  /*background-color: #ffffff; !* 设置容器背景颜色为白色 *!*/
+  padding: 20px;
+  border-radius: 5px; /* 添加圆角 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.btn{
+  margin-top: 10px;
+  width: 500px;
+  margin-left: 300px;
+  background-color: #3e5d9f;
+  border: 0;
+  color: white;
+  margin-bottom: 8px;
+}
+h1{
+  position: absolute;
+  display: block;
+}
+h2{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  /*text-shadow: 1.3px 2.7px white;*/
+  font-weight: 450;
+}
+.table-light {
+  margin-top: 25px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: white;
+}
+
+.zhu {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-left: 900px;
+}
+.zhu1{
+  position: absolute;
+}
+.zhu2{
+  position: absolute;
+  margin-left: 970px;
+}
+

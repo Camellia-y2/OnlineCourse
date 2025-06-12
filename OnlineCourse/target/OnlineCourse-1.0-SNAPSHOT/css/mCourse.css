@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+em, i {
+	font-style: normal;
+}
+
+input[type="submit"], input[type="reset"], button {
+	cursor: pointer;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* 一定要记得初始化 */
+.Box {
+	position: relative;
+	top: 4px;
+	margin: 0px auto;
+	height: 200px;
+	width: 1300px;
+	/* text-align: center; */
+}
+
+/*查询页面*/
+.queryBox {
+	margin: 10px auto;
+	width: 100%;
+	height: 50px;
+	border: 1px solid rgb(225, 218, 218);
+	box-shadow: 0 0 3px 2px rgba(225, 221, 221, 0.6);
+	border-radius: 3px;
+}
+
+.queryBox span {
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.queryBox input[type="text"] {
+	width: 116px;
+	height: 23px;
+	border: 1px solid rgb(151, 148, 148);
+	border-radius: 3px;
+	text-align: center;
+}
+
+.queryBox .querySubmit, .queryBox .queryReset, .queryBox button {
+	color: rgb(247, 248, 248);
+	width: 50px;
+	height: 26px;
+	border: none;
+	border-radius: 3px;
+	/* rgb(36, 160, 237) */
+	background-color: rgb(48, 169, 244);
+}
+/*新增按钮*/
+.queryBox .addBt {
+	width: 53px;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: rgb(234, 87, 87);
+	color: rgb(247, 248, 248);
+}
+
+.queryBox .queryReset {
+	background-color: rgb(234, 87, 87);
+}
+
+/*数据显示页面*/
+
+/*表格页面*/
+.Head {
+	width: 98%;
+	border: 1px solid rgb(225, 218, 218);
+	border-radius: 4px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+.flowerData {
+	width: 98%;
+	border-radius: 4px;
+	margin: 0px auto;
+	border: 1px solid rgb(225, 218, 218);
+	border-top: none;
+}
+
+.flowerData table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	height: 30px;
+	text-align: center;
+}
+/*课程信息显示 , */
+td:nth-child(1),td:nth-child(2)
+	{
+	width: 13%;
+}
+td:nth-child(4), td:nth-child(5),td:nth-child(6){
+	width: 14%;
+}
+td:nth-child(3){
+	width: 13%;
+	white-space: nowrap;
+}
+td:nth-child(7), td:nth-child(8){
+	width: 9%;
+	white-space: nowrap;
+}
+
+
+.title {
+	width: 100%;
+	/*合并单元格*/
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.title tr {
+	height: 40px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.flowerTable {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 1px solid rgb(228, 219, 219);
+}
+
+.flowerTable tr {
+	height: 40px;
+}
+/*删除和更新按钮*/
+.flowerData .updateBt, .flowerData .deleteBt {
+	width: 50px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: rgb(247, 248, 248);
+	font-size: 12px;
+	border: none;
+	border-radius: 3px;
+	/* rgb(36, 160, 237) */
+	background-color: rgb(48, 169, 244);
+}
+
+.flowerData .deleteBt {
+	background-color: rgb(234, 87, 87);
+}
